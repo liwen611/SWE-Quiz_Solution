@@ -1,2 +1,2 @@
 # SWE-Quiz_Solution
-Just for fun!
+Spent a month practicing for my technical interview. Solve a few puzzles in Python and a few more in R. Hopefully this would be helpful to someone or me!
