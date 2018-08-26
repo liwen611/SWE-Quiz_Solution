@@ -110,6 +110,12 @@ library(purrr)
     ## 
     ##     compact
 
+``` r
+library(wordcloud)
+```
+
+    ## Loading required package: RColorBrewer
+
 1. Fibnacci sequence
 ====================
 
@@ -299,11 +305,6 @@ Now I can make my little word cloud
 
 ``` r
 library(wordcloud)
-```
-
-    ## Loading required package: RColorBrewer
-
-``` r
 library(RColorBrewer)
 
 t3_cloud=wordcloud(words=t3$rownames.total., freq=t3$total, min.freq = 1,
