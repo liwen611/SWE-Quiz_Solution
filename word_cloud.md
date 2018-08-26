@@ -6,17 +6,11 @@ Liwen Huang
 Import some library
 
 ``` r
-library(plyr)
 library(dplyr)
 ```
 
     ## 
     ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:plyr':
-    ## 
-    ##     arrange, count, desc, failwith, id, mutate, rename, summarise,
-    ##     summarize
 
     ## The following objects are masked from 'package:stats':
     ## 
@@ -25,24 +19,6 @@ library(dplyr)
     ## The following objects are masked from 'package:base':
     ## 
     ##     intersect, setdiff, setequal, union
-
-``` r
-library(ggplot2)
-library(purrr)
-```
-
-    ## 
-    ## Attaching package: 'purrr'
-
-    ## The following object is masked from 'package:plyr':
-    ## 
-    ##     compact
-
-``` r
-library(wordcloud)
-```
-
-    ## Loading required package: RColorBrewer
 
 You want to build a word cloud, an infographic where the size of a word corresponds to how often it appears in the body of text. To do this, you'll need data. Write code that takes a long string and builds its word cloud data in a dictionary ↴ , where the keys are words and the values are the number of times the words occurred.
 
@@ -133,6 +109,11 @@ Now I can make my little word cloud
 
 ``` r
 library(wordcloud)
+```
+
+    ## Loading required package: RColorBrewer
+
+``` r
 library(RColorBrewer)
 
 t3_cloud=wordcloud(words=t3$rownames.total., freq=t3$total, min.freq = 1,
