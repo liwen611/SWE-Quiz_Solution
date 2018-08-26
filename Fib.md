@@ -1,8 +1,13 @@
 Fibnacci sequence
 ================
 
+There are many ways to solve the Fibnacci sequence problem, top-down with recursion or bottom-up by producing the whole sequence up to n-th fib number. Here are but a few possibilities.
+
 ``` r
 fib=function(len){
+  
+ # This function produce the fib sequence with bottom-up technique
+ 
 fibvals <- numeric(len)
 fibvals[1] <- 1
 fibvals[2] <- 1
@@ -22,8 +27,10 @@ fib(10)
     ##  [1]  1  1  2  3  5  8 13 21 34 55
 
 ``` r
-# Program to display the Fibonacci sequence up to n-th term using recursive functions
 recurse_fibonacci <- function(n) {
+  
+  #This function produce the n-th fib number with recusion
+  
 if(n <= 1) {
 return(n)
 } else {
@@ -40,7 +47,7 @@ recurse_fibonacci(10)
 
     ## [1] 55
 
-This is a solution found R document, which is a cleaner version of the above. But the purpose is to demonstrate the use of Recall though
+This is a solution found R document, which is a cleaner version of the above. The purpose is to demonstrate the use of Recall, but a do.call and simply call the function will work just as well.
 
 ``` r
 ## A trivial (but inefficient!) example:
@@ -53,7 +60,7 @@ fibonacci(10) # 55
 
     ## [1] 55
 
-Stumbled upon this on stack exchange the other day, and want to just copy and paste it here for future reference.
+For example, the following function do exactly the same.
 
 ``` r
 #naive recursive implementation
@@ -87,7 +94,7 @@ fibm(20)
 
     ## [1] 6765
 
-Is memoization faster? microbenchmark(fib(20), fibm(20)) Unit: microseconds expr min lq mean median uq max neval cld fib(20) 8005.314 8804.130 9758.75325 9301.6210 9798.8500 46867.182 100 b fibm(20) 38.991 44.798 54.12626 53.6725 60.4035 97.089 100 a
+Is memoization faster? microbenchmark(fib(20), fibm(20)) Unit: microseconds \#expr min lq mean median uq max neval cld \#fib(20) 8005.314 8804.130 9758.75325 9301.6210 9798.8500 46867.182 100 b \#fibm(20) 38.991 44.798 54.12626 53.6725 60.4035 97.089 100 a
 
 <span style="color:blue">Fun fact: There is another problem that is basically a Fibnacci problem. </span>
 
