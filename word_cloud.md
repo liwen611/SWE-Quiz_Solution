@@ -137,10 +137,7 @@ library(RColorBrewer)
 
 t3_cloud=wordcloud(words=t3$rownames.total., freq=t3$total, min.freq = 1,
          max.words=200, random.order=FALSE, rot.per=0, 
-         colors=brewer.pal(9, "Dark2"))
+         colors=brewer.pal(8, "Dark2"))
 ```
-
-    ## Warning in brewer.pal(9, "Dark2"): n too large, allowed maximum for palette Dark2 is 8
-    ## Returning the palette you asked for with that many colors
 
 ![](word_cloud_files/figure-markdown_github/unnamed-chunk-7-1.png)
