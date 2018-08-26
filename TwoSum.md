@@ -3,7 +3,6 @@ TwoSum
 Liwen Huang
 8/25/2018
 
-This problem is from leetcode, I have collected a few good solutions from the discussion.
 
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
