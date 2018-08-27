@@ -56,3 +56,12 @@ min_palincut(s)
 ```
 
     ## [1] 1
+
+Test it with a more complicated case.
+
+``` r
+s = "kayakmadamotto"
+min_palincut(s)
+```
+
+    ## [1] 3
